@@ -18,7 +18,7 @@ buildscript {
     }
 
     dependencies {
-        classpath "com.android.tools.build:gradle:8.7.3"
+        classpath "com.android.tools.build:gradle:7.4.2"
         if (kotlinVersion?.startsWith("2")) {
             classpath "org.jetbrains.kotlin:compose-compiler-gradle-plugin:$kotlinVersion"
         } else {
@@ -45,7 +45,7 @@ if (kotlinVersion?.startsWith("2")) {
 
 android {
     namespace 'com.smileidentity.flutter'
-    compileSdk 35
+    compileSdk 33
 
     defaultConfig {
         minSdk 21
