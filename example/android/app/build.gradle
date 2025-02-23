@@ -7,7 +7,7 @@ plugins {
 
 android {
     namespace "com.smileidentity.flutter.sample"
-    compileSdk 35
+    compileSdk 33
 
     sourceSets {
         main.java.srcDirs += 'src/main/kotlin'
@@ -29,7 +29,7 @@ android {
     }
 
     kotlinOptions {
-        jvmTarget = '17'
+        jvmTarget = JavaVersion.VERSION_1_8
         freeCompilerArgs += ['-Xskip-metadata-version-check']
     }
 }
